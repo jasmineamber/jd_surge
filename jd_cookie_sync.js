@@ -464,11 +464,11 @@ async function syncToQinglong(cookie, ptPin) {
         const headers = $request.headers;
 
         // 只处理京东主App的请求
-        const userAgent = headers['User-Agent'] || headers['user-agent'] || '';
-        if (!userAgent.startsWith('JD4iPhone')) {
-            $.done({});
-            return;
-        }
+        // const userAgent = headers['User-Agent'] || headers['user-agent'] || '';
+        // if (!userAgent.startsWith('JD4iPhone')) {
+        //     $.done({});
+        //     return;
+        // }
 
         // 提取并验证 Cookie
         const cookieResult = extractCookie(headers);
